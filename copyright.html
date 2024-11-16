@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130vh;
+  background: linear-gradient(45deg, maroon, #faac24);
+  font-family: Arial, sans-serif;
+  color: rgb(237, 204, 231);
+  
+}
+.container {
+  text-align: center;
+}
+.text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  padding-top: 20px;
+  color: #090960;
+}
+.text p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  color: #462f05;
+}
+.rocket img {
+  width: 250px;
+}
+img:hover{
+  body{
+    background-image: url(webdev.avif);
+  }
+}
+.social-icons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.a>img{
+  height: 40px;
+  width: auto;
+  border-radius: 5px;
+}
+.b>img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+footer {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  height: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+  .text h1 {
+    font-size: 2rem;
+  }
+  .text p {
+    font-size: 1.2rem;
+  }
+  .rocket img {
+    width: 200px;
+  }
+  .social-icons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .text h1 {
+    font-size: 1.8rem;
+  }
+  .text p {
+    font-size: 1rem;
+  }
+  .rocket img {
+    width: 150px;
+  }
+  footer {
+    font-size: 0.9rem;
+  }
+  .social-icons {
+    gap: 0.5rem;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="text">
+      <h1>This website is owned Vikas Pandit</h1>
+      <p>The website content is for informational purposes only. We are not responsible for inaccuracies or errors.</p>
+    </div>
+    <div class="rocket">
+      <img src="rocketlaunch.avif" alt="Rocket launching" />
+    </div>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/vikas-pandit-310951261" class="a"><img src="linkdinimg.jpeg" alt="linkdin link" ></a>
+      <a href="https://www.instagram.com/vikas3603pd/profilecard/?igsh=MTFraXBpbjhvZzNsdA==" class="b"><img src="instaimg.jpeg" alt="Instagram"></a>
+    </div>
+    <footer>
+      <p>&COPY; 2024 Vikas Pandit. All rights reserved. Unauthorized reproduction or distribution of this website's content, including text, images, designs, and code, is strictly prohibited. This website and its contents are protected by copyright laws and international treaties. You may not copy, reproduce, distribute, or create derivative works based on any part of this site without explicit permission from the owner. For permissions and inquiries, please contact me <a href="mailto:vikaspandit25116@gmail.com" style="color: rgb(226, 134, 21);">vikaspandit25116@gmail.com</a>.</p>
+    </footer>
+  </div>
+</body>
+</html>
