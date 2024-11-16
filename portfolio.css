@@ -115,15 +115,14 @@ a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: auto;
     background-color: #4A90E2;
-    color: white;
+    color: rgb(224, 210, 223);
     padding: 20px;
     text-align: center;
     padding: 20px;
     text-align: center;
 }
-.zero h2{
+.zero>h2{
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
@@ -132,8 +131,8 @@ a:hover{
   border-right: 4px solid #fff; 
   white-space: nowrap; 
   overflow: hidden; 
-  animation: typing 4s steps(35) 1s 1 normal both, blink 0.5s step-end infinite;
-}
+  animation: typing 4s steps(35) 1s 1 normal both, blink 0.5s step-end infinite; /* Typewriter + blinking cursor */
+  }
 @keyframes typing {
     from {
       width: 0;
@@ -142,7 +141,7 @@ a:hover{
       width: 100%;
     }
   }
-  @keyframes blink {
+@keyframes blink {
     50% {
       border-color: transparent;
     }
@@ -572,6 +571,10 @@ li:hover{
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(180deg, #4b00c4, #8000b4);  
 }
+.a{
+  color: #f0f0f0;
+}
+
 @media (max-width: 768px) {
 .menu-items{
     flex-direction: column;
@@ -693,9 +696,15 @@ li:hover{
   }  
 }
 @media (max-width: 480px) {
+  body{
+    max-width: 480px;
+  }
   .zero > h2 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.4;
+    max-width: 30ch;
+    margin-top: 0px;
+    white-space: pre-wrap;
 }
 .b1 {
     flex-direction: column;
@@ -831,6 +840,7 @@ li:hover{
   .copyright h3 {
     font-size: 14px;
   }
+  .copyright{
+    height: auto;
+  }
 }
-
-
